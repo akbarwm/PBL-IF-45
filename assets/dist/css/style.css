@@ -1,0 +1,361 @@
+/* font */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* #header {
+      width: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    } */
+
+/*-------------- CSS FOR HEADER ----------------*/
+/*----------------------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 8px;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    padding-bottom: 5px;
+  }
+}
+
+/*-------------- CSS FOR NAVBAR ----------------*/
+/*----------------------------------------------*/
+.navbar {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 20px;
+}
+
+.oval-btn {
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav .nav-link {
+    margin-right: 10px;
+  }
+
+  .oval-btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+  }
+}
+
+/*-------------- CSS FOR JUMBOTRON ----------------*/
+/*----------------------------------------------*/
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 10%;
+  background: linear-gradient(
+    90deg,
+    #231376,
+    #7e0b0b,
+    #d6540a,
+    #641256,
+    #033c4b
+  );
+  overflow: hidden;
+  margin-top: 50px;
+  background-size: 200% auto;
+  animation: gradientAnimation 5s linear infinite alternate;
+  transition: background 0.5s ease-in-out;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.jumbotron img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.jumbotron h1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+}
+
+.chatbot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 20px;
+}
+
+.chatbot img.animated {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+  animation: moveUpDown 2s linear infinite alternate;
+}
+
+.chatbot img.animated {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  margin-right: 20px;
+  animation: moveUpDown 2s linear infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    flex-direction: column;
+  }
+
+  .jumbotron img {
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+  .chatbot {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .jumbotron {
+    padding-top: 8%;
+    padding-bottom: 15%;
+    height: auto;
+  }
+
+  .jumbotron h1 {
+    padding-left: 5px;
+  }
+
+  .jumbotron div {
+    margin: 15px;
+  }
+
+  .chatbot img.animated {
+    max-width: 80%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .jumbotron img {
+    max-width: 80%;
+  }
+}
+
+/*-------------- CSS FOR GAMBAR ----------------*/
+/*----------------------------------------------*/
+.gambar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #eaeaea;
+}
+
+.gambar img {
+  flex: 1;
+  max-width: 7%;
+  height: auto;
+  margin: 1%;
+  pointer-events: none;
+  cursor: default;
+}
+
+/*-------------- CSS FOR ABOUT ----------------*/
+/*----------------------------------------------*/
+.about {
+  font-family: "Josefin Sans", sans-serif;
+  color: #607cc5;
+  margin: 5%;
+}
+
+/*-------------- CSS FOR CONTACT, MAP ----------------*/
+/*----------------------------------------------------*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+.saran h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #607cc5;
+}
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+.column p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0e0d0d;
+}
+
+.column:nth-child(2) {
+  flex: 2;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 50%;
+  background-color: #f0f0f0;
+  /* border: 1px solid #ccc; */
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.map iframe {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  border: 0;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .button {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .column {
+    margin: 0;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .map {
+    height: 150px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+  }
+}
+
+/*-------------- CSS FOR FOOTER ----------------*/
+/*----------------------------------------------------*/
+footer {
+  background-color: #d6540a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+footer p:hover {
+  text-decoration: none;
+}
