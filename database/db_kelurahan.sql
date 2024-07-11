@@ -293,14 +293,6 @@ CREATE TABLE `login_penduduk` (
   `kelurahan` enum('Duriangkang','Mangsang','Piayu','Muka Kuning') NOT NULL,
   `penghasilan` varchar(25) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `login_penduduk`
---
-
-INSERT INTO `login_penduduk` (`id`, `nik`, `nama`, `jenis_kelamin`, `whatsapp`, `username`, `password`, `validasi`, `tempat_lahir`, `tanggal_lahir`, `kewarganegaraan`, `agama`, `status_perkawinan`, `pekerjaan`, `alamat`, `rt`, `rw`, `kecamatan`, `kelurahan`, `penghasilan`) VALUES
-(29, '3305101412020001', 'Akbar Wahyu Maulana', 'Laki-laki', '085802446005', 'akbar', 'akbarwahyu', 1, 'Kebumen', '2002-12-14', 'Indonesia', 'Islam', 'Belum Menikah', 'wirausahawan', 'Puri Agung 3 Blok A2 No.1 Tanjung Piayu, Sei beduk, Kota Batam', '1', '10', 'Lajang', 'Mangsang', NULL);
-
 -- --------------------------------------------------------
 
 --
